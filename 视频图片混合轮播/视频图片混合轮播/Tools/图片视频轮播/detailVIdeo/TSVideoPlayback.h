@@ -25,6 +25,7 @@ typedef enum : NSUInteger {
 @property (nonatomic,assign) TSDETAILTYPE type;
 
 @property (nonatomic,weak) CLPlayerView *playerView;
+@property (nonatomic,strong) UIScrollView * scrolView;
 
 /*
  * isVideo  是否带视屏链接

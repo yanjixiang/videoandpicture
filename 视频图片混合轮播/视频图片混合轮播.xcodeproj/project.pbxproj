@@ -516,12 +516,12 @@
 			isa = PBXGroup;
 			children = (
 				C9DFE2E222E0003B00CF697A /* SDPhotoBrowserConfig.h */,
-				C9DFE2E822E0003B00CF697A /* SDBrowserImageView.h */,
+				C9DFE2E322E0003B00CF697A /* SDPhotoBrowser.m */,
+				C9DFE2E422E0003B00CF697A /* SDWaitingView.m */,
 				C9DFE2E522E0003B00CF697A /* SDBrowserImageView.m */,
 				C9DFE2E622E0003B00CF697A /* SDWaitingView.h */,
-				C9DFE2E422E0003B00CF697A /* SDWaitingView.m */,
 				C9DFE2E722E0003B00CF697A /* SDPhotoBrowser.h */,
-				C9DFE2E322E0003B00CF697A /* SDPhotoBrowser.m */,
+				C9DFE2E822E0003B00CF697A /* SDBrowserImageView.h */,
 			);
 			path = SDPhotoBrowser;
 			sourceTree = "<group>";

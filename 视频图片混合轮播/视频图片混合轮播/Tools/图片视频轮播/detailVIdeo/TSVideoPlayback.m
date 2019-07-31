@@ -18,7 +18,6 @@
 //@property (strong, nonatomic)AVPlayerItem *item;//播放单元
 //@property (strong, nonatomic)AVPlayerLayer *playerLayer;//播放界面
 
-@property (nonatomic,strong) UIScrollView * scrolView;
 @property (nonatomic,strong) UILabel *indexLab;//当前播放页数
 //@property (nonatomic,strong) UIButton *playBtn;//播放按钮
 @property (nonatomic,strong) UIButton *videoBtn;//切换到视频
@@ -109,7 +108,7 @@
     if (btn.tag == 1) {
         self.videoBtn.selected = YES;
         self.imgBtn.selected = NO;
-        self.videoBtn.backgroundColor = [UIColor orangeColor];
+        self.videoBtn.backgroundColor = [UIColor redColor];
         self.imgBtn.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.5];
         
         if ([self.scrolView.delegate respondsToSelector:@selector(scrollViewDidEndDecelerating:)]) {
@@ -126,7 +125,7 @@
         self.imgBtn.selected = YES;
         
         self.videoBtn.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.5];
-        self.imgBtn.backgroundColor = [UIColor orangeColor];
+        self.imgBtn.backgroundColor = [UIColor redColor];
         if (self.scrolView.contentOffset.x < self.frame.size.width) {
             if ([self.scrolView.delegate respondsToSelector:@selector(scrollViewDidEndDecelerating:)]) {
                 [self.scrolView setContentOffset:CGPointMake(self.frame.size.width, 0) animated:NO];
@@ -178,7 +177,7 @@
         if (self.scrolView.contentOffset.x < self.frame.size.width/2) {
             self.videoBtn.selected = YES;
             self.imgBtn.selected = NO;
-            self.videoBtn.backgroundColor = [UIColor orangeColor];
+            self.videoBtn.backgroundColor = [UIColor redColor];
             self.imgBtn.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.5];
             //            self.playBtn.hidden = NO;
             
@@ -186,7 +185,7 @@
             self.videoBtn.selected = NO;
             self.imgBtn.selected = YES;
             self.videoBtn.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.5];
-            self.imgBtn.backgroundColor = [UIColor orangeColor];
+            self.imgBtn.backgroundColor = [UIColor redColor];
             
         }
     }else{
@@ -228,7 +227,7 @@
     _videoBtn = [[UIButton alloc]init];
     [_videoBtn setTitle:@"视频" forState:UIControlStateNormal];
     [_videoBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-    [_videoBtn setBackgroundColor:[UIColor orangeColor]];
+    [_videoBtn setBackgroundColor:[UIColor redColor]];
     _videoBtn.titleLabel.font = [UIFont systemFontOfSize:13];
     [_videoBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     _videoBtn.layer.cornerRadius = 24/2;

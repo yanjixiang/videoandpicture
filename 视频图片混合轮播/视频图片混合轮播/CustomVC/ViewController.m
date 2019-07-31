@@ -37,15 +37,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self initialControlUnit];
 }
--(NSArray *)bannerArray
-{
-    return @[
-             @"http://wvideo.spriteapp.cn/video/2016/1117/5cd90c96-acb0-11e6-b83b-d4ae5296039d_wpc.mp4",
-             @"http://pic37.nipic.com/20140113/8800276_184927469000_2.png",
-             @"http://img.redocn.com/sheji/20141219/zhongguofengdaodeliyizhanbanzhijing_3744115.jpg",
-             @"http://pic1.win4000.com/wallpaper/c/53cdd1f7c1f21.jpg",
-             @"http://pic29.nipic.com/20130516/3895313_131038325107_2.jpg"];
-}
 -(void)initialControlUnit
 {
     //状态栏高度
@@ -88,7 +79,16 @@
     rightL.textAlignment = NSTextAlignmentRight;
     
 }
-
+-(NSArray *)bannerArray
+{
+    return @[
+             @"http://wvideo.spriteapp.cn/video/2016/1117/5cd90c96-acb0-11e6-b83b-d4ae5296039d_wpc.mp4",
+             @"http://img.ptocool.com/3332-1518523974126-29",
+             @"http://img.ptocool.com/3332-1518523974125-28",
+             @"http://img.ptocool.com/3332-1518523974125-27",
+             @"http://img.ptocool.com/3332-1518523974124-26",
+             @"http://img.ptocool.com/3332-1518523974124-26"];
+}
 #pragma mark - TSVideoPlaybackDelegate
 -(void)videoView:(TSVideoPlayback *)view didSelectItemAtIndexPath:(NSInteger)index
 {
@@ -96,7 +96,7 @@
     
     SDPhotoBrowser * broser = [[SDPhotoBrowser alloc] init];
     broser.currentImageIndex = index-1;
-    broser.sourceImagesContainerView = self.video;
+    broser.sourceImagesContainerView = self.video.scrolView;
     broser.imageCount =self.bannerArray.count-1;
     broser.delegate = self;
     [broser show];
