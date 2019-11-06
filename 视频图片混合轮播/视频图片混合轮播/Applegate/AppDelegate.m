@@ -18,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     ViewController *rootvc = [[ViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:rootvc];
     self.window.rootViewController = navi;
@@ -50,6 +51,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
 
 
 @end

@@ -5,9 +5,10 @@
 #import "TSVideoPlayback.h"
 #import <AVFoundation/AVFoundation.h>
 #import "UIImageView+WebCache.h"
+#import "JPVideoPlayerKit.h"
 //#import "SVProgressHUD.h"
 
-@interface TSVideoPlayback ()<UIScrollViewDelegate>
+@interface TSVideoPlayback ()<UIScrollViewDelegate,JPVideoPlayerDelegate>
 {
     BOOL isReadToPlay;
     BOOL isEndPlay;
@@ -24,7 +25,6 @@
 @property (nonatomic,strong) UIButton *imgBtn;//切换到图片
 @property (nonatomic,strong) NSArray *dataArray;
 @property (nonatomic,strong) UIImageView *placeholderImg;//占位图img
-
 @end
 
 @implementation TSVideoPlayback
@@ -57,21 +57,12 @@
         if (type == TSDETAILTYPEVIDEO) {
             if (i == 0) {
                 NSURL *url = [NSURL URLWithString:self.dataArray[0]];
-                CLPlayerView *playerView = [[CLPlayerView alloc] initWithFrame:CGRectMake(0, 0, self.CLwidth, self.CLheight)];
-                _playerView = playerView;
-                [self.scrolView addSubview:_playerView];
-                //视频地址
-                _playerView.url = url;
-                //返回按钮点击事件回调
-                [_playerView backButton:^(UIButton *button) {
-                    NSLog(@"返回按钮被点击");
-                    //查询是否是全屏状态
-                    NSLog(@"%d",self->_playerView.isFullScreen);
-                }];
-                //播放完成回调
-                [_playerView endPlay:^{
-                    NSLog(@"播放完成");
-                }];
+                self.scrolView.jp_videoPlayerDelegate = self;
+                [self.scrolView jp_playVideoWithURL:url
+                bufferingIndicator:nil
+                       controlView:nil
+                      progressView:nil
+                 configuration:nil];
             }
             else{
                 UIImageView * img = [[UIImageView alloc]initWithFrame:CGRectMake(i*self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
@@ -135,7 +126,6 @@
     }
     return;
 }
-
 -(void)imgTapClick
 {
     if ([self.delegate respondsToSelector:@selector(videoView:didSelectItemAtIndexPath:)]) {
@@ -159,14 +149,14 @@
         else{
             self.indexLab.hidden = NO;
             //            [self.playBtn setHidden:YES];
-            [self.playerView pausePlay];
-            [_playerView.player seekToTime:CMTimeMake(0, 1)];
+            [self.scrolView jp_pause];
+//            [_playerView.player seekToTime:CMTimeMake(0, 1)];
             
         }
         self.indexLab.text = [NSString stringWithFormat:@"%d/%d",(int)index,(int)self.dataArray.count - 1];
     }else{
-        [self.playerView pausePlay];
-        [_playerView.player seekToTime:CMTimeMake(0, 1)];
+        [self.scrolView jp_pause];
+//        [_playerView.player seekToTime:CMTimeMake(0, 1)];
         self.indexLab.hidden = NO;
         self.indexLab.text = [NSString stringWithFormat:@"%d/%d",(int)index+1,(int)self.dataArray.count];
     }
@@ -254,6 +244,6 @@
     //    [self.playBtn addTarget:self action:@selector(playClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 - (void)clearCache {
-    [self.playerView destroyPlayer];
+    [self.scrolView jp_stopPlay];
 }
 @end

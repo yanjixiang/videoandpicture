@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C964DAA12372946D0094E00D /* JPVideoPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA7A2372946C0094E00D /* JPVideoPlayerDownloader.m */; };
+		C964DAA22372946D0094E00D /* JPVideoPlayerCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA7B2372946C0094E00D /* JPVideoPlayerCache.m */; };
+		C964DAA32372946D0094E00D /* UIView+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA7E2372946C0094E00D /* UIView+WebVideoCache.m */; };
+		C964DAA42372946D0094E00D /* JPVideoPlayerCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA7F2372946C0094E00D /* JPVideoPlayerCompat.m */; };
+		C964DAA52372946D0094E00D /* JPVideoPlayerResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA842372946C0094E00D /* JPVideoPlayerResourceLoader.m */; };
+		C964DAA62372946D0094E00D /* JPVideoPlayerScrollViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA862372946C0094E00D /* JPVideoPlayerScrollViewProtocol.m */; };
+		C964DAA72372946D0094E00D /* JPVideoPlayerCacheFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA8C2372946C0094E00D /* JPVideoPlayerCacheFile.m */; };
+		C964DAA82372946D0094E00D /* JPVideoPlayerControlViews.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA8D2372946C0094E00D /* JPVideoPlayerControlViews.m */; };
+		C964DAA92372946D0094E00D /* JPVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C964DA8F2372946C0094E00D /* JPVideoPlayer.bundle */; };
+		C964DAAA2372946D0094E00D /* UITableView+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA912372946C0094E00D /* UITableView+WebVideoCache.m */; };
+		C964DAAB2372946D0094E00D /* UICollectionViewCell+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA922372946C0094E00D /* UICollectionViewCell+WebVideoCache.m */; };
+		C964DAAC2372946D0094E00D /* JPVideoPlayerCellProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA932372946C0094E00D /* JPVideoPlayerCellProtocol.m */; };
+		C964DAAD2372946D0094E00D /* JPVideoPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA942372946C0094E00D /* JPVideoPlayerManager.m */; };
+		C964DAAE2372946D0094E00D /* UICollectionView+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA972372946C0094E00D /* UICollectionView+WebVideoCache.m */; };
+		C964DAAF2372946D0094E00D /* JPGCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA992372946C0094E00D /* JPGCDExtensions.m */; };
+		C964DAB02372946D0094E00D /* JPVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA9A2372946C0094E00D /* JPVideoPlayer.m */; };
+		C964DAB12372946D0094E00D /* JPMethodInjecting.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA9B2372946C0094E00D /* JPMethodInjecting.m */; };
+		C964DAB22372946D0094E00D /* JPVideoPlayerSupportUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA9C2372946D0094E00D /* JPVideoPlayerSupportUtils.m */; };
+		C964DAB32372946D0094E00D /* UITableViewCell+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA9D2372946D0094E00D /* UITableViewCell+WebVideoCache.m */; };
+		C964DAB42372946D0094E00D /* JPVideoPlayerCachePath.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA9E2372946D0094E00D /* JPVideoPlayerCachePath.m */; };
+		C964DAB52372946D0094E00D /* JPResourceLoadingRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C964DA9F2372946D0094E00D /* JPResourceLoadingRequestTask.m */; };
 		C9DFE21622DFFC2B00CF697A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DFE21422DFFC2B00CF697A /* Main.storyboard */; };
 		C9DFE21822DFFC2D00CF697A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9DFE21722DFFC2D00CF697A /* Assets.xcassets */; };
 		C9DFE21B22DFFC2D00CF697A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DFE21922DFFC2D00CF697A /* LaunchScreen.storyboard */; };
@@ -26,15 +47,6 @@
 		C9DFE26B22DFFE4E00CF697A /* TSVideoPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE26022DFFE4E00CF697A /* TSVideoPlayback.m */; };
 		C9DFE26C22DFFE4E00CF697A /* icon_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DFE26122DFFE4E00CF697A /* icon_play@2x.png */; };
 		C9DFE26D22DFFE4E00CF697A /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DFE26222DFFE4E00CF697A /* icon_video@2x.png */; };
-		C9DFE28222DFFF1800CF697A /* CLSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE27022DFFF1800CF697A /* CLSlider.m */; };
-		C9DFE28322DFFF1800CF697A /* AILoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE27322DFFF1800CF697A /* AILoadingView.m */; };
-		C9DFE28422DFFF1800CF697A /* UITabBarController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE27522DFFF1800CF697A /* UITabBarController+CLPlayerRotation.m */; };
-		C9DFE28522DFFF1800CF697A /* CLPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE27622DFFF1800CF697A /* CLPlayerMaskView.m */; };
-		C9DFE28622DFFF1800CF697A /* UINavigationController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE27722DFFF1800CF697A /* UINavigationController+CLPlayerRotation.m */; };
-		C9DFE28722DFFF1800CF697A /* CLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE27922DFFF1800CF697A /* CLPlayerView.m */; };
-		C9DFE28822DFFF1800CF697A /* UIViewController+CLPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE27A22DFFF1800CF697A /* UIViewController+CLPlayerRotation.m */; };
-		C9DFE28922DFFF1800CF697A /* CLPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C9DFE27F22DFFF1800CF697A /* CLPlayer.bundle */; };
-		C9DFE28A22DFFF1800CF697A /* UIView+CLSetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE28122DFFF1800CF697A /* UIView+CLSetRect.m */; };
 		C9DFE2A522DFFF3800CF697A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE28D22DFFF3800CF697A /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		C9DFE2A622DFFF3800CF697A /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE29622DFFF3800CF697A /* ViewController+MASAdditions.m */; };
 		C9DFE2A722DFFF3800CF697A /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE29A22DFFF3800CF697A /* MASCompositeConstraint.m */; };
@@ -64,7 +76,6 @@
 		C9DFE2E922E0003B00CF697A /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE2E322E0003B00CF697A /* SDPhotoBrowser.m */; };
 		C9DFE2EA22E0003B00CF697A /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE2E422E0003B00CF697A /* SDWaitingView.m */; };
 		C9DFE2EB22E0003B00CF697A /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE2E522E0003B00CF697A /* SDBrowserImageView.m */; };
-		C9DFE2ED22E0078B00CF697A /* 播放.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DFE2EC22E0078B00CF697A /* 播放.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +96,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C964DA762372946C0094E00D /* JPVideoPlayerCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCellProtocol.h; sourceTree = "<group>"; };
+		C964DA772372946C0094E00D /* JPVideoPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerManager.h; sourceTree = "<group>"; };
+		C964DA782372946C0094E00D /* UICollectionViewCell+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+WebVideoCache.h"; sourceTree = "<group>"; };
+		C964DA792372946C0094E00D /* UITableView+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+WebVideoCache.h"; sourceTree = "<group>"; };
+		C964DA7A2372946C0094E00D /* JPVideoPlayerDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerDownloader.m; sourceTree = "<group>"; };
+		C964DA7B2372946C0094E00D /* JPVideoPlayerCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCache.m; sourceTree = "<group>"; };
+		C964DA7C2372946C0094E00D /* JPVideoPlayerCacheFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCacheFile.h; sourceTree = "<group>"; };
+		C964DA7D2372946C0094E00D /* JPVideoPlayerControlViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerControlViews.h; sourceTree = "<group>"; };
+		C964DA7E2372946C0094E00D /* UIView+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebVideoCache.m"; sourceTree = "<group>"; };
+		C964DA7F2372946C0094E00D /* JPVideoPlayerCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCompat.m; sourceTree = "<group>"; };
+		C964DA802372946C0094E00D /* JPVideoPlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerProtocol.h; sourceTree = "<group>"; };
+		C964DA812372946C0094E00D /* JPVideoPlayerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerKit.h; sourceTree = "<group>"; };
+		C964DA822372946C0094E00D /* JPVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayer.h; sourceTree = "<group>"; };
+		C964DA832372946C0094E00D /* JPGCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPGCDExtensions.h; sourceTree = "<group>"; };
+		C964DA842372946C0094E00D /* JPVideoPlayerResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerResourceLoader.m; sourceTree = "<group>"; };
+		C964DA852372946C0094E00D /* UICollectionView+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+WebVideoCache.h"; sourceTree = "<group>"; };
+		C964DA862372946C0094E00D /* JPVideoPlayerScrollViewProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerScrollViewProtocol.m; sourceTree = "<group>"; };
+		C964DA872372946C0094E00D /* JPResourceLoadingRequestTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPResourceLoadingRequestTask.h; sourceTree = "<group>"; };
+		C964DA882372946C0094E00D /* JPVideoPlayerCachePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCachePath.h; sourceTree = "<group>"; };
+		C964DA892372946C0094E00D /* UITableViewCell+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+WebVideoCache.h"; sourceTree = "<group>"; };
+		C964DA8A2372946C0094E00D /* JPMethodInjecting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPMethodInjecting.h; sourceTree = "<group>"; };
+		C964DA8B2372946C0094E00D /* JPVideoPlayerSupportUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerSupportUtils.h; sourceTree = "<group>"; };
+		C964DA8C2372946C0094E00D /* JPVideoPlayerCacheFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCacheFile.m; sourceTree = "<group>"; };
+		C964DA8D2372946C0094E00D /* JPVideoPlayerControlViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerControlViews.m; sourceTree = "<group>"; };
+		C964DA8E2372946C0094E00D /* JPVideoPlayerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCache.h; sourceTree = "<group>"; };
+		C964DA8F2372946C0094E00D /* JPVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JPVideoPlayer.bundle; sourceTree = "<group>"; };
+		C964DA902372946C0094E00D /* JPVideoPlayerDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerDownloader.h; sourceTree = "<group>"; };
+		C964DA912372946C0094E00D /* UITableView+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+WebVideoCache.m"; sourceTree = "<group>"; };
+		C964DA922372946C0094E00D /* UICollectionViewCell+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+WebVideoCache.m"; sourceTree = "<group>"; };
+		C964DA932372946C0094E00D /* JPVideoPlayerCellProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCellProtocol.m; sourceTree = "<group>"; };
+		C964DA942372946C0094E00D /* JPVideoPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerManager.m; sourceTree = "<group>"; };
+		C964DA952372946C0094E00D /* JPVideoPlayerCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCompat.h; sourceTree = "<group>"; };
+		C964DA962372946C0094E00D /* UIView+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebVideoCache.h"; sourceTree = "<group>"; };
+		C964DA972372946C0094E00D /* UICollectionView+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+WebVideoCache.m"; sourceTree = "<group>"; };
+		C964DA982372946C0094E00D /* JPVideoPlayerResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerResourceLoader.h; sourceTree = "<group>"; };
+		C964DA992372946C0094E00D /* JPGCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPGCDExtensions.m; sourceTree = "<group>"; };
+		C964DA9A2372946C0094E00D /* JPVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayer.m; sourceTree = "<group>"; };
+		C964DA9B2372946C0094E00D /* JPMethodInjecting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPMethodInjecting.m; sourceTree = "<group>"; };
+		C964DA9C2372946D0094E00D /* JPVideoPlayerSupportUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerSupportUtils.m; sourceTree = "<group>"; };
+		C964DA9D2372946D0094E00D /* UITableViewCell+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+WebVideoCache.m"; sourceTree = "<group>"; };
+		C964DA9E2372946D0094E00D /* JPVideoPlayerCachePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCachePath.m; sourceTree = "<group>"; };
+		C964DA9F2372946D0094E00D /* JPResourceLoadingRequestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPResourceLoadingRequestTask.m; sourceTree = "<group>"; };
+		C964DAA02372946D0094E00D /* JPVideoPlayerScrollViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerScrollViewProtocol.h; sourceTree = "<group>"; };
 		C9DFE20B22DFFC2B00CF697A /* 视频图片混合轮播.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "视频图片混合轮播.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DFE21522DFFC2B00CF697A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9DFE21722DFFC2D00CF697A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,23 +172,6 @@
 		C9DFE26122DFFE4E00CF697A /* icon_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_play@2x.png"; sourceTree = "<group>"; };
 		C9DFE26222DFFE4E00CF697A /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
 		C9DFE26322DFFE4E00CF697A /* TSVideoPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSVideoPlayback.h; sourceTree = "<group>"; };
-		C9DFE27022DFFF1800CF697A /* CLSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSlider.m; sourceTree = "<group>"; };
-		C9DFE27122DFFF1800CF697A /* CLPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPlayerView.h; sourceTree = "<group>"; };
-		C9DFE27222DFFF1800CF697A /* UINavigationController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CLPlayerRotation.h"; sourceTree = "<group>"; };
-		C9DFE27322DFFF1800CF697A /* AILoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AILoadingView.m; sourceTree = "<group>"; };
-		C9DFE27422DFFF1800CF697A /* UIViewController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CLPlayerRotation.h"; sourceTree = "<group>"; };
-		C9DFE27522DFFF1800CF697A /* UITabBarController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+CLPlayerRotation.m"; sourceTree = "<group>"; };
-		C9DFE27622DFFF1800CF697A /* CLPlayerMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPlayerMaskView.m; sourceTree = "<group>"; };
-		C9DFE27722DFFF1800CF697A /* UINavigationController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CLPlayerRotation.m"; sourceTree = "<group>"; };
-		C9DFE27822DFFF1800CF697A /* CLSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSlider.h; sourceTree = "<group>"; };
-		C9DFE27922DFFF1800CF697A /* CLPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPlayerView.m; sourceTree = "<group>"; };
-		C9DFE27A22DFFF1800CF697A /* UIViewController+CLPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CLPlayerRotation.m"; sourceTree = "<group>"; };
-		C9DFE27B22DFFF1800CF697A /* AILoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILoadingView.h; sourceTree = "<group>"; };
-		C9DFE27C22DFFF1800CF697A /* CLPlayerMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPlayerMaskView.h; sourceTree = "<group>"; };
-		C9DFE27D22DFFF1800CF697A /* UITabBarController+CLPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+CLPlayerRotation.h"; sourceTree = "<group>"; };
-		C9DFE27F22DFFF1800CF697A /* CLPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLPlayer.bundle; sourceTree = "<group>"; };
-		C9DFE28022DFFF1800CF697A /* UIView+CLSetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLSetRect.h"; sourceTree = "<group>"; };
-		C9DFE28122DFFF1800CF697A /* UIView+CLSetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLSetRect.m"; sourceTree = "<group>"; };
 		C9DFE28C22DFFF3800CF697A /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		C9DFE28D22DFFF3800CF697A /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		C9DFE28E22DFFF3800CF697A /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -200,7 +237,6 @@
 		C9DFE2E622E0003B00CF697A /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
 		C9DFE2E722E0003B00CF697A /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
 		C9DFE2E822E0003B00CF697A /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
-		C9DFE2EC22E0078B00CF697A /* 播放.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +264,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C964DA752372946C0094E00D /* JPVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C964DA762372946C0094E00D /* JPVideoPlayerCellProtocol.h */,
+				C964DA772372946C0094E00D /* JPVideoPlayerManager.h */,
+				C964DA782372946C0094E00D /* UICollectionViewCell+WebVideoCache.h */,
+				C964DA792372946C0094E00D /* UITableView+WebVideoCache.h */,
+				C964DA7A2372946C0094E00D /* JPVideoPlayerDownloader.m */,
+				C964DA7B2372946C0094E00D /* JPVideoPlayerCache.m */,
+				C964DA7C2372946C0094E00D /* JPVideoPlayerCacheFile.h */,
+				C964DA7D2372946C0094E00D /* JPVideoPlayerControlViews.h */,
+				C964DA7E2372946C0094E00D /* UIView+WebVideoCache.m */,
+				C964DA7F2372946C0094E00D /* JPVideoPlayerCompat.m */,
+				C964DA802372946C0094E00D /* JPVideoPlayerProtocol.h */,
+				C964DA812372946C0094E00D /* JPVideoPlayerKit.h */,
+				C964DA822372946C0094E00D /* JPVideoPlayer.h */,
+				C964DA832372946C0094E00D /* JPGCDExtensions.h */,
+				C964DA842372946C0094E00D /* JPVideoPlayerResourceLoader.m */,
+				C964DA852372946C0094E00D /* UICollectionView+WebVideoCache.h */,
+				C964DA862372946C0094E00D /* JPVideoPlayerScrollViewProtocol.m */,
+				C964DA872372946C0094E00D /* JPResourceLoadingRequestTask.h */,
+				C964DA882372946C0094E00D /* JPVideoPlayerCachePath.h */,
+				C964DA892372946C0094E00D /* UITableViewCell+WebVideoCache.h */,
+				C964DA8A2372946C0094E00D /* JPMethodInjecting.h */,
+				C964DA8B2372946C0094E00D /* JPVideoPlayerSupportUtils.h */,
+				C964DA8C2372946C0094E00D /* JPVideoPlayerCacheFile.m */,
+				C964DA8D2372946C0094E00D /* JPVideoPlayerControlViews.m */,
+				C964DA8E2372946C0094E00D /* JPVideoPlayerCache.h */,
+				C964DA8F2372946C0094E00D /* JPVideoPlayer.bundle */,
+				C964DA902372946C0094E00D /* JPVideoPlayerDownloader.h */,
+				C964DA912372946C0094E00D /* UITableView+WebVideoCache.m */,
+				C964DA922372946C0094E00D /* UICollectionViewCell+WebVideoCache.m */,
+				C964DA932372946C0094E00D /* JPVideoPlayerCellProtocol.m */,
+				C964DA942372946C0094E00D /* JPVideoPlayerManager.m */,
+				C964DA952372946C0094E00D /* JPVideoPlayerCompat.h */,
+				C964DA962372946C0094E00D /* UIView+WebVideoCache.h */,
+				C964DA972372946C0094E00D /* UICollectionView+WebVideoCache.m */,
+				C964DA982372946C0094E00D /* JPVideoPlayerResourceLoader.h */,
+				C964DA992372946C0094E00D /* JPGCDExtensions.m */,
+				C964DA9A2372946C0094E00D /* JPVideoPlayer.m */,
+				C964DA9B2372946C0094E00D /* JPMethodInjecting.m */,
+				C964DA9C2372946D0094E00D /* JPVideoPlayerSupportUtils.m */,
+				C964DA9D2372946D0094E00D /* UITableViewCell+WebVideoCache.m */,
+				C964DA9E2372946D0094E00D /* JPVideoPlayerCachePath.m */,
+				C964DA9F2372946D0094E00D /* JPResourceLoadingRequestTask.m */,
+				C964DAA02372946D0094E00D /* JPVideoPlayerScrollViewProtocol.h */,
+			);
+			path = JPVideoPlayer;
+			sourceTree = "<group>";
+		};
 		C9DFE20222DFFC2B00CF697A = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +416,7 @@
 		C9DFE24B22DFFCDD00CF697A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C964DA752372946C0094E00D /* JPVideoPlayer */,
 				C9DFE2E122E0003B00CF697A /* SDPhotoBrowser */,
 				C9DFE25122DFFE4E00CF697A /* 图片视频轮播 */,
 			);
@@ -355,7 +442,6 @@
 		C9DFE25122DFFE4E00CF697A /* 图片视频轮播 */ = {
 			isa = PBXGroup;
 			children = (
-				C9DFE26E22DFFF1800CF697A /* 视频播放 */,
 				C9DFE25222DFFE4E00CF697A /* SVProgressHUD */,
 				C9DFE25F22DFFE4E00CF697A /* detailVIdeo */,
 			);
@@ -391,53 +477,12 @@
 		C9DFE25F22DFFE4E00CF697A /* detailVIdeo */ = {
 			isa = PBXGroup;
 			children = (
-				C9DFE26022DFFE4E00CF697A /* TSVideoPlayback.m */,
 				C9DFE26122DFFE4E00CF697A /* icon_play@2x.png */,
 				C9DFE26222DFFE4E00CF697A /* icon_video@2x.png */,
 				C9DFE26322DFFE4E00CF697A /* TSVideoPlayback.h */,
+				C9DFE26022DFFE4E00CF697A /* TSVideoPlayback.m */,
 			);
 			path = detailVIdeo;
-			sourceTree = "<group>";
-		};
-		C9DFE26E22DFFF1800CF697A /* 视频播放 */ = {
-			isa = PBXGroup;
-			children = (
-				C9DFE26F22DFFF1800CF697A /* CLPlayer */,
-				C9DFE28022DFFF1800CF697A /* UIView+CLSetRect.h */,
-				C9DFE28122DFFF1800CF697A /* UIView+CLSetRect.m */,
-			);
-			path = "视频播放";
-			sourceTree = "<group>";
-		};
-		C9DFE26F22DFFF1800CF697A /* CLPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				C9DFE27822DFFF1800CF697A /* CLSlider.h */,
-				C9DFE27022DFFF1800CF697A /* CLSlider.m */,
-				C9DFE27122DFFF1800CF697A /* CLPlayerView.h */,
-				C9DFE27922DFFF1800CF697A /* CLPlayerView.m */,
-				C9DFE27222DFFF1800CF697A /* UINavigationController+CLPlayerRotation.h */,
-				C9DFE27722DFFF1800CF697A /* UINavigationController+CLPlayerRotation.m */,
-				C9DFE27422DFFF1800CF697A /* UIViewController+CLPlayerRotation.h */,
-				C9DFE27A22DFFF1800CF697A /* UIViewController+CLPlayerRotation.m */,
-				C9DFE27B22DFFF1800CF697A /* AILoadingView.h */,
-				C9DFE27322DFFF1800CF697A /* AILoadingView.m */,
-				C9DFE27C22DFFF1800CF697A /* CLPlayerMaskView.h */,
-				C9DFE27622DFFF1800CF697A /* CLPlayerMaskView.m */,
-				C9DFE27522DFFF1800CF697A /* UITabBarController+CLPlayerRotation.m */,
-				C9DFE27D22DFFF1800CF697A /* UITabBarController+CLPlayerRotation.h */,
-				C9DFE27E22DFFF1800CF697A /* Resource */,
-			);
-			path = CLPlayer;
-			sourceTree = "<group>";
-		};
-		C9DFE27E22DFFF1800CF697A /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				C9DFE2EC22E0078B00CF697A /* 播放.png */,
-				C9DFE27F22DFFF1800CF697A /* CLPlayer.bundle */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		C9DFE28B22DFFF3800CF697A /* Masonry */ = {
@@ -629,11 +674,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9DFE2ED22E0078B00CF697A /* 播放.png in Resources */,
 				C9DFE26A22DFFE4E00CF697A /* README.md in Resources */,
 				C9DFE26922DFFE4E00CF697A /* SVProgressHUD.bundle in Resources */,
-				C9DFE28922DFFF1800CF697A /* CLPlayer.bundle in Resources */,
 				C9DFE21B22DFFC2D00CF697A /* LaunchScreen.storyboard in Resources */,
+				C964DAA92372946D0094E00D /* JPVideoPlayer.bundle in Resources */,
 				C9DFE21822DFFC2D00CF697A /* Assets.xcassets in Resources */,
 				C9DFE26422DFFE4E00CF697A /* LICENSE in Resources */,
 				C9DFE26D22DFFE4E00CF697A /* icon_video@2x.png in Resources */,
@@ -666,49 +710,61 @@
 				C9DFE25022DFFD0B00CF697A /* CustomModel.m in Sources */,
 				C9DFE24822DFFC9000CF697A /* ViewController.m in Sources */,
 				C9DFE2EB22E0003B00CF697A /* SDBrowserImageView.m in Sources */,
+				C964DAB42372946D0094E00D /* JPVideoPlayerCachePath.m in Sources */,
 				C9DFE2D522DFFFFE00CF697A /* UIImageView+HighlightedWebCache.m in Sources */,
-				C9DFE28822DFFF1800CF697A /* UIViewController+CLPlayerRotation.m in Sources */,
 				C9DFE2E922E0003B00CF697A /* SDPhotoBrowser.m in Sources */,
 				C9DFE24722DFFC9000CF697A /* AppDelegate.m in Sources */,
 				C9DFE2A722DFFF3800CF697A /* MASCompositeConstraint.m in Sources */,
-				C9DFE28322DFFF1800CF697A /* AILoadingView.m in Sources */,
-				C9DFE28522DFFF1800CF697A /* CLPlayerMaskView.m in Sources */,
+				C964DAAB2372946D0094E00D /* UICollectionViewCell+WebVideoCache.m in Sources */,
+				C964DAA52372946D0094E00D /* JPVideoPlayerResourceLoader.m in Sources */,
 				C9DFE26822DFFE4E00CF697A /* SVIndefiniteAnimatedView.m in Sources */,
 				C9DFE26722DFFE4E00CF697A /* SVProgressHUD.m in Sources */,
+				C964DAA82372946D0094E00D /* JPVideoPlayerControlViews.m in Sources */,
 				C9DFE2DF22DFFFFE00CF697A /* UIView+WebCacheOperation.m in Sources */,
+				C964DAAF2372946D0094E00D /* JPGCDExtensions.m in Sources */,
 				C9DFE2DD22DFFFFE00CF697A /* NSData+ImageContentType.m in Sources */,
 				C9DFE2AC22DFFF3800CF697A /* MASConstraint.m in Sources */,
 				C9DFE2DA22DFFFFE00CF697A /* SDWebImagePrefetcher.m in Sources */,
+				C964DAA72372946D0094E00D /* JPVideoPlayerCacheFile.m in Sources */,
 				C9DFE2D422DFFFFE00CF697A /* SDWebImageDecoder.m in Sources */,
+				C964DAA22372946D0094E00D /* JPVideoPlayerCache.m in Sources */,
 				C9DFE26B22DFFE4E00CF697A /* TSVideoPlayback.m in Sources */,
 				C9DFE2D922DFFFFE00CF697A /* SDWebImageCompat.m in Sources */,
 				C9DFE2DC22DFFFFE00CF697A /* SDWebImageDownloaderOperation.m in Sources */,
+				C964DAB12372946D0094E00D /* JPMethodInjecting.m in Sources */,
+				C964DAA12372946D0094E00D /* JPVideoPlayerDownloader.m in Sources */,
 				C9DFE2D122DFFFFE00CF697A /* UIImage+WebP.m in Sources */,
 				C9DFE2EA22E0003B00CF697A /* SDWaitingView.m in Sources */,
+				C964DAAD2372946D0094E00D /* JPVideoPlayerManager.m in Sources */,
 				C9DFE21E22DFFC2D00CF697A /* main.m in Sources */,
 				C9DFE2A622DFFF3800CF697A /* ViewController+MASAdditions.m in Sources */,
 				C9DFE2D722DFFFFE00CF697A /* UIImage+GIF.m in Sources */,
 				C9DFE2D822DFFFFE00CF697A /* UIImage+MultiFormat.m in Sources */,
 				C9DFE2AD22DFFF3800CF697A /* MASViewConstraint.m in Sources */,
+				C964DAA62372946D0094E00D /* JPVideoPlayerScrollViewProtocol.m in Sources */,
 				C9DFE2AE22DFFF3800CF697A /* MASViewAttribute.m in Sources */,
-				C9DFE28622DFFF1800CF697A /* UINavigationController+CLPlayerRotation.m in Sources */,
+				C964DAB52372946D0094E00D /* JPResourceLoadingRequestTask.m in Sources */,
+				C964DAAA2372946D0094E00D /* UITableView+WebVideoCache.m in Sources */,
 				C9DFE2A522DFFF3800CF697A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				C964DAB22372946D0094E00D /* JPVideoPlayerSupportUtils.m in Sources */,
 				C9DFE2A822DFFF3800CF697A /* MASConstraintMaker.m in Sources */,
+				C964DAA32372946D0094E00D /* UIView+WebVideoCache.m in Sources */,
 				C9DFE2D222DFFFFE00CF697A /* MKAnnotationView+WebCache.m in Sources */,
-				C9DFE28222DFFF1800CF697A /* CLSlider.m in Sources */,
 				C9DFE2DE22DFFFFE00CF697A /* UIImageView+WebCache.m in Sources */,
-				C9DFE28422DFFF1800CF697A /* UITabBarController+CLPlayerRotation.m in Sources */,
+				C964DAB32372946D0094E00D /* UITableViewCell+WebVideoCache.m in Sources */,
 				C9DFE26522DFFE4E00CF697A /* SVRadialGradientLayer.m in Sources */,
+				C964DAAC2372946D0094E00D /* JPVideoPlayerCellProtocol.m in Sources */,
 				C9DFE2D622DFFFFE00CF697A /* SDWebImageDownloader.m in Sources */,
+				C964DAAE2372946D0094E00D /* UICollectionView+WebVideoCache.m in Sources */,
 				C9DFE2AA22DFFF3800CF697A /* NSArray+MASAdditions.m in Sources */,
 				C9DFE2A922DFFF3800CF697A /* MASLayoutConstraint.m in Sources */,
 				C9DFE2E022DFFFFE00CF697A /* UIButton+WebCache.m in Sources */,
 				C9DFE2AB22DFFF3800CF697A /* View+MASAdditions.m in Sources */,
 				C9DFE2DB22DFFFFE00CF697A /* SDImageCache.m in Sources */,
-				C9DFE28722DFFF1800CF697A /* CLPlayerView.m in Sources */,
 				C9DFE2D322DFFFFE00CF697A /* SDWebImageManager.m in Sources */,
 				C9DFE26622DFFE4E00CF697A /* SVProgressAnimatedView.m in Sources */,
-				C9DFE28A22DFFF1800CF697A /* UIView+CLSetRect.m in Sources */,
+				C964DAA42372946D0094E00D /* JPVideoPlayerCompat.m in Sources */,
+				C964DAB02372946D0094E00D /* JPVideoPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,7 +936,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68VVHD6ZCQ;
+				DEVELOPMENT_TEAM = 7GF4X6YYLW;
 				INFOPLIST_FILE = "视频图片混合轮播/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -897,7 +953,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68VVHD6ZCQ;
+				DEVELOPMENT_TEAM = 7GF4X6YYLW;
 				INFOPLIST_FILE = "视频图片混合轮播/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

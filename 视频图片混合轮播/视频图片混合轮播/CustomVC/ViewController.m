@@ -18,14 +18,6 @@
 @end
 
 @implementation ViewController
-/*
- *页面已经消失方法调用
- */
--(void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    [self.video.playerView pausePlay];
-    [self.video.playerView.player seekToTime:CMTimeMake(0, 1)];
-}
 
 - (void)dealloc {
     [self.video clearCache];

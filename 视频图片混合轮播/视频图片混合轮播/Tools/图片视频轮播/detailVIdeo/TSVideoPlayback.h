@@ -4,8 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CLPlayerView.h"
-#import "UIView+CLSetRect.h"
+
 @class TSVideoPlayback;
 typedef enum : NSUInteger {
     TSDETAILTYPEVIDEO,//视频
@@ -24,7 +23,6 @@ typedef enum : NSUInteger {
 @property (nonatomic,weak) id<TSVideoPlaybackDelegate> delegate;
 @property (nonatomic,assign) TSDETAILTYPE type;
 
-@property (nonatomic,weak) CLPlayerView *playerView;
 @property (nonatomic,strong) UIScrollView * scrolView;
 
 /*
