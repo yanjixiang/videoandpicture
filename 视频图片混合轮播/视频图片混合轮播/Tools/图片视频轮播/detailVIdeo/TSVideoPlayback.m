@@ -25,6 +25,10 @@
 @property (nonatomic,strong) UIButton *imgBtn;//切换到图片
 @property (nonatomic,strong) NSArray *dataArray;
 @property (nonatomic,strong) UIImageView *placeholderImg;//占位图img
+
+@property (nonatomic,assign) BOOL isAutoPlay;//自动播放
+
+
 @end
 
 @implementation TSVideoPlayback
@@ -62,7 +66,8 @@
                 bufferingIndicator:nil
                        controlView:nil
                       progressView:nil
-                 configuration:nil];
+                                      configuration:nil];
+//                [self.scrolView jp_pause];
             }
             else{
                 UIImageView * img = [[UIImageView alloc]initWithFrame:CGRectMake(i*self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
@@ -92,6 +97,19 @@
             self.indexLab.hidden = NO;
             self.videoBtn.selected = YES;
             self.imgBtn.selected = YES;
+        }
+    }
+}
+- (void)setPlayerIsAutoPlay:(BOOL)isAutoPlayer {
+    if (isAutoPlayer == NO) {
+        self.isAutoPlay = YES;
+    }
+}
+- (void)playerStatusDidChanged:(JPVideoPlayerStatus)playerStatus {
+    if (self.isAutoPlay == YES) {
+        if (playerStatus == 3) {
+            [self.scrolView jp_pause];
+            self.isAutoPlay = NO;
         }
     }
 }
