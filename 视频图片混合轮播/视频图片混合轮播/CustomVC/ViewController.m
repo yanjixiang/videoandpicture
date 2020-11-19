@@ -46,7 +46,8 @@
     
     self.video = [[TSVideoPlayback alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 250) ];
     self.video.delegate = self;
-    
+       //自动播放是否开启（默认开启）
+    [self.video setPlayerIsAutoPlay:NO];
     self.navigationItem.title = @"视频图片轮播";
     //全图片  ---  TSDETAILTYPEIMAGE
     [self.video setWithIsVideo:TSDETAILTYPEVIDEO andDataArray:[self bannerArray]];
