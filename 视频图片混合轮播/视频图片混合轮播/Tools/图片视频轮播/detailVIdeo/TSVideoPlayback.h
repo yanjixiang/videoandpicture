@@ -36,4 +36,5 @@ typedef enum : NSUInteger {
 
 //是否自动播放视频
 - (void)setPlayerIsAutoPlay:(BOOL)isAutoPlayer;
+
 @end
