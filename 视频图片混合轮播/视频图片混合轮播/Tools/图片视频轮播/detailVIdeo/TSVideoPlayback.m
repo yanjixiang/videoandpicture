@@ -5,10 +5,12 @@
 #import "TSVideoPlayback.h"
 #import <AVFoundation/AVFoundation.h>
 #import "UIImageView+WebCache.h"
-#import "JPVideoPlayerKit.h"
+//#import "JPVideoPlayerKit.h"
+#import "SJVideoPlayer.h"
+#import "SJEdgeControlLayer.h"
 //#import "SVProgressHUD.h"
 
-@interface TSVideoPlayback ()<UIScrollViewDelegate,JPVideoPlayerDelegate>
+@interface TSVideoPlayback ()<UIScrollViewDelegate,SJVideoPlayerControlLayerDelegate>
 {
     BOOL isReadToPlay;
     BOOL isEndPlay;
@@ -25,8 +27,7 @@
 @property (nonatomic,strong) UIButton *imgBtn;//切换到图片
 @property (nonatomic,strong) NSArray *dataArray;
 @property (nonatomic,strong) UIImageView *placeholderImg;//占位图img
-
-@property (nonatomic,assign) BOOL isAutoPlay;//自动播放
+@property (nonatomic,strong) SJVideoPlayer *player;//占位图img
 
 
 @end
@@ -61,13 +62,25 @@
         if (type == TSDETAILTYPEVIDEO) {
             if (i == 0) {
                 NSURL *url = [NSURL URLWithString:self.dataArray[0]];
-                self.scrolView.jp_videoPlayerDelegate = self;
-                [self.scrolView jp_playVideoWithURL:url
-                bufferingIndicator:nil
-                       controlView:nil
-                      progressView:nil
-                                      configuration:nil];
-//                [self.scrolView jp_pause];
+                _player.view.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+//                _player.view.backgroundColor = UIColor.redColor;
+                [self.scrolView addSubview:_player.view];
+                // 设置资源进行播放
+                _player.URLAsset = [[SJVideoPlayerURLAsset alloc] initWithURL:url];
+                _player.defaultEdgeControlLayer.fixesBackItem = NO;
+                _player.defaultEdgeControlLayer.hiddenBackButtonWhenOrientationIsPortrait = YES;
+                __weak typeof(self) _self = self;
+                //滑动手势
+                _player.gestureControl.panHandler = ^(id<SJPlayerGestureControl>  _Nonnull control, SJPanGestureTriggeredPosition position, SJPanGestureMovingDirection direction, SJPanGestureRecognizerState state, CGPoint translate) {
+                    
+                __strong typeof(_self) self = _self;
+                    
+                if ( !self ) return ;
+                /// ....
+                    
+                    [self changeBtnClick:self.imgBtn];
+                };
+                [_player pause];
             }
             else{
                 UIImageView * img = [[UIImageView alloc]initWithFrame:CGRectMake(i*self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
@@ -100,19 +113,7 @@
         }
     }
 }
-- (void)setPlayerIsAutoPlay:(BOOL)isAutoPlayer {
-    if (isAutoPlayer == NO) {
-        self.isAutoPlay = YES;
-    }
-}
-- (void)playerStatusDidChanged:(JPVideoPlayerStatus)playerStatus {
-    if (self.isAutoPlay == YES) {
-        if (playerStatus == 3) {
-            [self.scrolView jp_pause];
-            self.isAutoPlay = NO;
-        }
-    }
-}
+
 - (void)changeBtnClick:(UIButton *)btn{
     if (btn.tag == 1) {
         self.videoBtn.selected = YES;
@@ -167,14 +168,14 @@
         else{
             self.indexLab.hidden = NO;
             //            [self.playBtn setHidden:YES];
-            [self.scrolView jp_pause];
-//            [_playerView.player seekToTime:CMTimeMake(0, 1)];
+            [self.player pause];
+            //            [_playerView.player seekToTime:CMTimeMake(0, 1)];
             
         }
         self.indexLab.text = [NSString stringWithFormat:@"%d/%d",(int)index,(int)self.dataArray.count - 1];
     }else{
-        [self.scrolView jp_pause];
-//        [_playerView.player seekToTime:CMTimeMake(0, 1)];
+        [self.player pause];
+        //        [_playerView.player seekToTime:CMTimeMake(0, 1)];
         self.indexLab.hidden = NO;
         self.indexLab.text = [NSString stringWithFormat:@"%d/%d",(int)index+1,(int)self.dataArray.count];
     }
@@ -260,8 +261,12 @@
     [self.videoBtn addTarget:self action:@selector(changeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.imgBtn addTarget:self action:@selector(changeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     //    [self.playBtn addTarget:self action:@selector(playClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    _player = [SJVideoPlayer player];
+//    _player.controlLayerDelegate = self;
+
 }
 - (void)clearCache {
-    [self.scrolView jp_stopPlay];
+    [self.player stop];
 }
 @end

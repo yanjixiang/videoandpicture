@@ -34,7 +34,5 @@ typedef enum : NSUInteger {
 //清除缓存（必须写）
 -(void)clearCache;
 
-//是否自动播放视频
-- (void)setPlayerIsAutoPlay:(BOOL)isAutoPlayer;
 
 @end
