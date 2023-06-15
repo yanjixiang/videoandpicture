@@ -1,0 +1,100 @@
+PODS:
+  - Masonry (1.1.0)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.16.0):
+    - SDWebImage/Core (= 5.16.0)
+  - SDWebImage/Core (5.16.0)
+  - SJBaseVideoPlayer (3.7.6):
+    - Masonry
+    - SJBaseVideoPlayer/AVPlayer (= 3.7.6)
+    - SJBaseVideoPlayer/Common (= 3.7.6)
+    - SJUIKit/AttributesFactory (>= 0.0.0.38)
+    - SJUIKit/ObserverHelper
+    - SJUIKit/Queues
+    - SJUIKit/SQLite3
+  - SJBaseVideoPlayer/AVPlayer (3.7.6):
+    - Masonry
+    - SJBaseVideoPlayer/Common
+    - SJUIKit/AttributesFactory (>= 0.0.0.38)
+    - SJUIKit/ObserverHelper
+    - SJUIKit/Queues
+    - SJUIKit/SQLite3
+  - SJBaseVideoPlayer/Common (3.7.6):
+    - Masonry
+    - SJBaseVideoPlayer/ResourceLoader
+    - SJUIKit/AttributesFactory (>= 0.0.0.38)
+    - SJUIKit/ObserverHelper
+    - SJUIKit/Queues
+    - SJUIKit/SQLite3
+  - SJBaseVideoPlayer/ResourceLoader (3.7.6):
+    - Masonry
+    - SJUIKit/AttributesFactory (>= 0.0.0.38)
+    - SJUIKit/ObserverHelper
+    - SJUIKit/Queues
+    - SJUIKit/SQLite3
+  - SJUIKit/AttributesFactory (0.0.0.59):
+    - SJUIKit/AttributesFactory/Deprecated (= 0.0.0.59)
+    - SJUIKit/AttributesFactory/UIKitText (= 0.0.0.59)
+  - SJUIKit/AttributesFactory/Deprecated (0.0.0.59)
+  - SJUIKit/AttributesFactory/UIKitText (0.0.0.59)
+  - SJUIKit/ObserverHelper (0.0.0.59)
+  - SJUIKit/Queues (0.0.0.59)
+  - SJUIKit/SQLite3 (0.0.0.59):
+    - SJUIKit/SQLite3/Core (= 0.0.0.59)
+    - SJUIKit/SQLite3/Protocol (= 0.0.0.59)
+    - YYModel
+  - SJUIKit/SQLite3/Core (0.0.0.59):
+    - SJUIKit/SQLite3/Protocol
+    - YYModel
+  - SJUIKit/SQLite3/Protocol (0.0.0.59):
+    - YYModel
+  - SJVideoPlayer (3.4.3):
+    - SJBaseVideoPlayer (>= 3.7.5)
+    - SJVideoPlayer/Common (= 3.4.3)
+    - SJVideoPlayer/ControlLayers (= 3.4.3)
+    - SJVideoPlayer/ResourceLoader (= 3.4.3)
+  - SJVideoPlayer/Common (3.4.3):
+    - Masonry
+    - SJBaseVideoPlayer (>= 3.7.5)
+    - SJUIKit/AttributesFactory
+    - SJVideoPlayer/ResourceLoader
+  - SJVideoPlayer/ControlLayers (3.4.3):
+    - SJBaseVideoPlayer (>= 3.7.5)
+    - SJVideoPlayer/Common
+  - SJVideoPlayer/ResourceLoader (3.4.3):
+    - SJBaseVideoPlayer (>= 3.7.5)
+  - TYCyclePagerView (1.2.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Masonry
+  - SDCycleScrollView
+  - SDWebImage
+  - SJVideoPlayer
+  - TYCyclePagerView
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Masonry
+    - SDCycleScrollView
+    - SDWebImage
+    - SJBaseVideoPlayer
+    - SJUIKit
+    - SJVideoPlayer
+    - TYCyclePagerView
+    - YYModel
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: 2aea163b50bfcb569a2726b6a754c54a4506fcf6
+  SJBaseVideoPlayer: f15debaa8c1e27b63bdefc8caeec515e9c71d079
+  SJUIKit: a40111941e408cc17d4c1c23495aa92999e814b0
+  SJVideoPlayer: 4f09814f58522e0975cb2dccfda925f6c8643467
+  TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: f24eedea9ba6541650b69e1f05eadbaaa8790ca2
+
+COCOAPODS: 1.11.3
