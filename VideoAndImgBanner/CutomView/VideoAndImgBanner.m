@@ -84,7 +84,8 @@
 - (void)setMediaPaths:(NSArray *)mediaPaths {
     _mediaPaths = mediaPaths;
     self.indexL.text = [NSString stringWithFormat:@"1/%ld",mediaPaths.count - 1];
-    //    self.bannerView.imageURLStringsGroup = mediaPaths;
+    [self.pagerView reloadData];
+
 }
 - (TYCyclePagerView *)pagerView {
     if (!_pagerView) {

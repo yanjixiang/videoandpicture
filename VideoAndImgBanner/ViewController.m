@@ -19,19 +19,20 @@
 @property (nonatomic,strong)NSArray *bannerArray;
 @end
 
+
+
 @implementation ViewController
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.bannerView];
     [self.bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.offset(0);
         make.right.offset(0);
-        make.top.offset(0);
+        make.top.offset(100);
         make.height.mas_equalTo(300);
     }];
     
