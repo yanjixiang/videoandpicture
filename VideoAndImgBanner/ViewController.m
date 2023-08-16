@@ -48,7 +48,7 @@
 -(NSArray *)bannerArray
 {
     return @[
-        @"http://vjs.zencdn.net/v/oceans.mp4",
+        @"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
         @"http://img.ptocool.com/3332-1518523974126-29",
         @"http://img.ptocool.com/3332-1518523974125-28",
         @"http://img.ptocool.com/3332-1518523974125-27",

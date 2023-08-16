@@ -64,6 +64,7 @@
             make.top.equalTo(self.indexL);
         }];
         
+        
         [self addSubview:self.imgBtn];
         [self.imgBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.mas_equalTo(60);
@@ -71,9 +72,6 @@
             make.left.equalTo(self.videoBtn.mas_right).offset(20);
             make.top.equalTo(self.videoBtn);
         }];
-        
-        
-        
     }
     return self;
 }
@@ -85,7 +83,7 @@
     _mediaPaths = mediaPaths;
     self.indexL.text = [NSString stringWithFormat:@"1/%ld",mediaPaths.count - 1];
     [self.pagerView reloadData];
-
+    
 }
 - (TYCyclePagerView *)pagerView {
     if (!_pagerView) {

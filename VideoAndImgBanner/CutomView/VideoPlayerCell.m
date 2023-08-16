@@ -7,6 +7,7 @@
 
 #import "VideoPlayerCell.h"
 #import <Masonry.h>
+#import <SDWebImage.h>
 @implementation VideoPlayerCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -32,6 +33,10 @@
     // 创建 SJVideoPlayerURLAsset 实例，并将 autoPlay 属性设置为 NO
     SJVideoPlayerURLAsset *asset = [[SJVideoPlayerURLAsset alloc] initWithURL:url];
     self.player.URLAsset = asset;
+    
+    //封面
+    //    [self.player.presentView.placeholderImageView sd_setImageWithURL:[NSURL URLWithString:@"http://img.ptocool.com/3332-1518523974126-29"]];
+    //
     //设置初始状态为暂停，不自动播放
     [self.player pause];
     
@@ -58,12 +63,9 @@
             NSLog(@"暂停状态");
             
         }else if (player.timeControlStatus == SJPlaybackTimeControlStatusWaitingToPlay) {
-            
             NSLog(@"正在缓冲");
-            
         }
     };
-    
 }
 - (SJVideoPlayer *)player {
     if (!_player) {
@@ -72,6 +74,8 @@
         _player.defaultEdgeControlLayer.hiddenBackButtonWhenOrientationIsPortrait = YES;
         //暂停的时候保持控制层显示
         _player.pausedToKeepAppearState = YES;
+        //    准备好显示画面时, 是否隐藏占位图
+        //        _player.automaticallyHidesPlaceholderImageView = NO;
         
     }
     return _player;
