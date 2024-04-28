@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VideoPlayerCell : UICollectionViewCell
+@interface BannerVideoCell : UICollectionViewCell
 
 @property (nonatomic,strong)SJVideoPlayer *player;
 @property (nonatomic,copy)NSString *videoUrl;

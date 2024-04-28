@@ -5,10 +5,10 @@
 //  Created by 闫继祥 on 2023/6/15.
 //
 
-#import "VideoPlayerCell.h"
+#import "BannerVideoCell.h"
 #import <Masonry.h>
 #import <SDWebImage.h>
-@implementation VideoPlayerCell
+@implementation BannerVideoCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {

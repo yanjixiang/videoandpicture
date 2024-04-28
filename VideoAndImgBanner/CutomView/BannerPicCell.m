@@ -5,9 +5,9 @@
 //  Created by 闫继祥 on 2023/6/15.
 //
 
-#import "ImageCell.h"
+#import "BannerPicCell.h"
 #import <Masonry.h>
-@implementation ImageCell
+@implementation BannerPicCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -27,6 +27,8 @@
 - (UIImageView *)img {
     if (!_img) {
         _img = [[UIImageView alloc] init];
+        _img.contentMode = UIViewContentModeScaleAspectFill;
+        _img.clipsToBounds = YES;
     }
     return _img;
 }

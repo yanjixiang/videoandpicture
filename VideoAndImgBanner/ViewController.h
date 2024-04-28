@@ -6,8 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomBaseVC.h"
-@interface ViewController : CustomBaseVC
+#import "BannerBaseVC.h"
+@interface ViewController : BannerBaseVC
 
 
 @end

@@ -5,14 +5,14 @@
 //  Created by 闫继祥 on 2023/6/15.
 //
 
-#import "VideoAndImgBanner.h"
+#import "VideoAndPicBanner.h"
 //#import <SDCycleScrollView.h>
 #import <TYCyclePagerView.h>
 #import <SJVideoPlayer/SJVideoPlayer.h>
 #import <Masonry.h>
 #import "UIImageView+WebCache.h"
 
-@interface VideoAndImgBanner ()<TYCyclePagerViewDelegate,TYCyclePagerViewDataSource>
+@interface VideoAndPicBanner ()<TYCyclePagerViewDelegate,TYCyclePagerViewDataSource>
 
 @property (nonatomic, strong) TYCyclePagerView *pagerView;
 
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation VideoAndImgBanner
+@implementation VideoAndPicBanner
 
 /*
  // Only override drawRect: if you perform custom drawing.
@@ -95,8 +95,8 @@
         _pagerView.autoScrollInterval = 0.0;
         _pagerView.dataSource = self;
         _pagerView.delegate = self;
-        [_pagerView registerClass:[VideoPlayerCell class] forCellWithReuseIdentifier:@"cell1"];
-        [_pagerView registerClass:[ImageCell class] forCellWithReuseIdentifier:@"cell2"];
+        [_pagerView registerClass:[BannerVideoCell class] forCellWithReuseIdentifier:@"cell1"];
+        [_pagerView registerClass:[BannerPicCell class] forCellWithReuseIdentifier:@"cell2"];
     }
     return _pagerView;
 }
@@ -128,7 +128,7 @@
         return self.videoCell;
     }else {
         //图片
-        ImageCell *cell = [pagerView dequeueReusableCellWithReuseIdentifier:@"cell2" forIndex:index];
+        BannerPicCell *cell = [pagerView dequeueReusableCellWithReuseIdentifier:@"cell2" forIndex:index];
         NSString *imagePath = self.mediaPaths[index];
         [cell.img sd_setImageWithURL:[NSURL URLWithString:imagePath] placeholderImage:nil];
         

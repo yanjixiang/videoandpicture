@@ -6,15 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "VideoPlayerCell.h"
-#import "ImageCell.h"
+#import "BannerVideoCell.h"
+#import "BannerPicCell.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VideoAndImgBanner : UIView
+@interface VideoAndPicBanner : UIView
 
 @property (nonatomic, strong) NSArray *mediaPaths;
 
-@property (nonatomic,strong)VideoPlayerCell *videoCell;
+@property (nonatomic,strong)BannerVideoCell *videoCell;
 
 @end
 

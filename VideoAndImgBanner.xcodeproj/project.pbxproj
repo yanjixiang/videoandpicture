@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C99C9A542A8CABA200D957DC /* CustomBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C9A532A8CABA200D957DC /* CustomBaseVC.m */; };
+		C99C9A542A8CABA200D957DC /* BannerBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C9A532A8CABA200D957DC /* BannerBaseVC.m */; };
 		C9AB19FC2A3AAC160090D170 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB19FB2A3AAC160090D170 /* AppDelegate.m */; };
 		C9AB1A022A3AAC160090D170 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A012A3AAC160090D170 /* ViewController.m */; };
 		C9AB1A052A3AAC160090D170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AB1A032A3AAC160090D170 /* Main.storyboard */; };
@@ -17,9 +17,9 @@
 		C9AB1A172A3AAC170090D170 /* VideoAndImgBannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A162A3AAC170090D170 /* VideoAndImgBannerTests.m */; };
 		C9AB1A212A3AAC170090D170 /* VideoAndImgBannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A202A3AAC170090D170 /* VideoAndImgBannerUITests.m */; };
 		C9AB1A232A3AAC170090D170 /* VideoAndImgBannerUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A222A3AAC170090D170 /* VideoAndImgBannerUITestsLaunchTests.m */; };
-		C9AB1A342A3AC0C00090D170 /* VideoAndImgBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A332A3AC0C00090D170 /* VideoAndImgBanner.m */; };
-		C9AB1A372A3AF0500090D170 /* VideoPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A362A3AF0500090D170 /* VideoPlayerCell.m */; };
-		C9AB1A3A2A3AF8ED0090D170 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A392A3AF8ED0090D170 /* ImageCell.m */; };
+		C9AB1A342A3AC0C00090D170 /* VideoAndPicBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A332A3AC0C00090D170 /* VideoAndPicBanner.m */; };
+		C9AB1A372A3AF0500090D170 /* BannerVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A362A3AF0500090D170 /* BannerVideoCell.m */; };
+		C9AB1A3A2A3AF8ED0090D170 /* BannerPicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB1A392A3AF8ED0090D170 /* BannerPicCell.m */; };
 		EC08C9A047C443C9ED2EF2FD /* libPods-VideoAndImgBanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB79AD0B4FCD03497AFB1C22 /* libPods-VideoAndImgBanner.a */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +43,8 @@
 /* Begin PBXFileReference section */
 		2A1A7D338B349CE79CF2E475 /* Pods-VideoAndImgBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoAndImgBanner.release.xcconfig"; path = "Target Support Files/Pods-VideoAndImgBanner/Pods-VideoAndImgBanner.release.xcconfig"; sourceTree = "<group>"; };
 		6278790B6787CCAA7A21C3F0 /* Pods-VideoAndImgBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoAndImgBanner.debug.xcconfig"; path = "Target Support Files/Pods-VideoAndImgBanner/Pods-VideoAndImgBanner.debug.xcconfig"; sourceTree = "<group>"; };
-		C99C9A522A8CABA200D957DC /* CustomBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBaseVC.h; sourceTree = "<group>"; };
-		C99C9A532A8CABA200D957DC /* CustomBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBaseVC.m; sourceTree = "<group>"; };
+		C99C9A522A8CABA200D957DC /* BannerBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerBaseVC.h; sourceTree = "<group>"; };
+		C99C9A532A8CABA200D957DC /* BannerBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerBaseVC.m; sourceTree = "<group>"; };
 		C9AB19F72A3AAC160090D170 /* VideoAndImgBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoAndImgBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AB19FA2A3AAC160090D170 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9AB19FB2A3AAC160090D170 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,12 +60,12 @@
 		C9AB1A1C2A3AAC170090D170 /* VideoAndImgBannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoAndImgBannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AB1A202A3AAC170090D170 /* VideoAndImgBannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoAndImgBannerUITests.m; sourceTree = "<group>"; };
 		C9AB1A222A3AAC170090D170 /* VideoAndImgBannerUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoAndImgBannerUITestsLaunchTests.m; sourceTree = "<group>"; };
-		C9AB1A322A3AC0C00090D170 /* VideoAndImgBanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoAndImgBanner.h; sourceTree = "<group>"; };
-		C9AB1A332A3AC0C00090D170 /* VideoAndImgBanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoAndImgBanner.m; sourceTree = "<group>"; };
-		C9AB1A352A3AF0500090D170 /* VideoPlayerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerCell.h; sourceTree = "<group>"; };
-		C9AB1A362A3AF0500090D170 /* VideoPlayerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerCell.m; sourceTree = "<group>"; };
-		C9AB1A382A3AF8ED0090D170 /* ImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
-		C9AB1A392A3AF8ED0090D170 /* ImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		C9AB1A322A3AC0C00090D170 /* VideoAndPicBanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoAndPicBanner.h; sourceTree = "<group>"; };
+		C9AB1A332A3AC0C00090D170 /* VideoAndPicBanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoAndPicBanner.m; sourceTree = "<group>"; };
+		C9AB1A352A3AF0500090D170 /* BannerVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerVideoCell.h; sourceTree = "<group>"; };
+		C9AB1A362A3AF0500090D170 /* BannerVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerVideoCell.m; sourceTree = "<group>"; };
+		C9AB1A382A3AF8ED0090D170 /* BannerPicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerPicCell.h; sourceTree = "<group>"; };
+		C9AB1A392A3AF8ED0090D170 /* BannerPicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerPicCell.m; sourceTree = "<group>"; };
 		EB79AD0B4FCD03497AFB1C22 /* libPods-VideoAndImgBanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoAndImgBanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,14 +162,14 @@
 		C9AB1A3E2A3B1D740090D170 /* CutomView */ = {
 			isa = PBXGroup;
 			children = (
-				C9AB1A322A3AC0C00090D170 /* VideoAndImgBanner.h */,
-				C9AB1A332A3AC0C00090D170 /* VideoAndImgBanner.m */,
-				C9AB1A352A3AF0500090D170 /* VideoPlayerCell.h */,
-				C9AB1A362A3AF0500090D170 /* VideoPlayerCell.m */,
-				C9AB1A382A3AF8ED0090D170 /* ImageCell.h */,
-				C9AB1A392A3AF8ED0090D170 /* ImageCell.m */,
-				C99C9A522A8CABA200D957DC /* CustomBaseVC.h */,
-				C99C9A532A8CABA200D957DC /* CustomBaseVC.m */,
+				C9AB1A322A3AC0C00090D170 /* VideoAndPicBanner.h */,
+				C9AB1A332A3AC0C00090D170 /* VideoAndPicBanner.m */,
+				C9AB1A352A3AF0500090D170 /* BannerVideoCell.h */,
+				C9AB1A362A3AF0500090D170 /* BannerVideoCell.m */,
+				C9AB1A382A3AF8ED0090D170 /* BannerPicCell.h */,
+				C9AB1A392A3AF8ED0090D170 /* BannerPicCell.m */,
+				C99C9A522A8CABA200D957DC /* BannerBaseVC.h */,
+				C99C9A532A8CABA200D957DC /* BannerBaseVC.m */,
 			);
 			path = CutomView;
 			sourceTree = "<group>";
@@ -358,10 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9AB1A022A3AAC160090D170 /* ViewController.m in Sources */,
-				C99C9A542A8CABA200D957DC /* CustomBaseVC.m in Sources */,
-				C9AB1A372A3AF0500090D170 /* VideoPlayerCell.m in Sources */,
-				C9AB1A3A2A3AF8ED0090D170 /* ImageCell.m in Sources */,
-				C9AB1A342A3AC0C00090D170 /* VideoAndImgBanner.m in Sources */,
+				C99C9A542A8CABA200D957DC /* BannerBaseVC.m in Sources */,
+				C9AB1A372A3AF0500090D170 /* BannerVideoCell.m in Sources */,
+				C9AB1A3A2A3AF8ED0090D170 /* BannerPicCell.m in Sources */,
+				C9AB1A342A3AC0C00090D170 /* VideoAndPicBanner.m in Sources */,
 				C9AB19FC2A3AAC160090D170 /* AppDelegate.m in Sources */,
 				C9AB1A0D2A3AAC170090D170 /* main.m in Sources */,
 			);

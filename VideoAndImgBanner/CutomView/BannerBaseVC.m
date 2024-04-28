@@ -5,7 +5,7 @@
 //  Created by 闫继祥 on 2023/8/16.
 //
 
-#import "CustomBaseVC.h"
+#import "BannerBaseVC.h"
 
 @implementation UIViewController (RotationConfiguration)
 - (BOOL)shouldAutorotate {
@@ -62,11 +62,11 @@
 
 
 
-@interface CustomBaseVC ()
+@interface BannerBaseVC ()
 
 @end
 
-@implementation CustomBaseVC
+@implementation BannerBaseVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

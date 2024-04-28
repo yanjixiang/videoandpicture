@@ -8,14 +8,15 @@
 #import "ViewController.h"
 
 #import <Masonry.h>
-#import "VideoAndImgBanner.h"
+#import "VideoAndPicBanner.h"
+
 
 #define  SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 
 
 @interface ViewController ()
 
-@property (nonatomic,strong)VideoAndImgBanner *bannerView;
+@property (nonatomic,strong)VideoAndPicBanner *bannerView;
 @property (nonatomic,strong)NSArray *bannerArray;
 @end
 
@@ -39,21 +40,21 @@
     self.bannerView.mediaPaths = self.bannerArray;
 }
 
-- (VideoAndImgBanner *)bannerView {
+- (VideoAndPicBanner *)bannerView {
     if (!_bannerView) {
-        _bannerView = [[VideoAndImgBanner alloc] init];
+        _bannerView = [[VideoAndPicBanner alloc] init];
     }
     return _bannerView;
 }
 -(NSArray *)bannerArray
 {
     return @[
-        @"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
-        @"http://img.ptocool.com/3332-1518523974126-29",
-        @"http://img.ptocool.com/3332-1518523974125-28",
-        @"http://img.ptocool.com/3332-1518523974125-27",
-        @"http://img.ptocool.com/3332-1518523974124-26",
-        @"http://img.ptocool.com/3332-1518523974124-26"];
+        @"http://www.w3school.com.cn/example/html5/mov_bbb.mp4",
+        @"https://img0.baidu.com/it/u=2810162682,1658069482&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200",
+        @"http://img0.baidu.com/it/u=4041499034,1836682537&fm=253&app=138&f=JPEG?w=800&h=1200",
+        @"http://img2.baidu.com/it/u=2251990402,2452081879&fm=253&app=138&f=JPEG?w=1200&h=800",
+        @"http://img0.baidu.com/it/u=3914136240,3888777778&fm=253&app=138&f=JPEG?w=800&h=1200",
+        @"http://img1.baidu.com/it/u=2308921345,283361833&fm=253&app=138&f=JPEG?w=800&h=1200"];
 }
 
 // 以下的代码都是固定的, 可以直接copy到视图控制器中
